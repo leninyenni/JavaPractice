@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Feature1]">
+  <test name="AcceptanceTest(failed)">
+    <classes>
+      <class name="testNGtutorial.B4Test.TestClass2">
+        <methods>
+          <include name="doBeforeSuite"/>
+          <include name="doBeforeTestonce"/>
+          <include name="scenario1"/>
+          <include name="beforeMethodWithParam"/>
+        </methods>
+      </class> <!-- testNGtutorial.B4Test.TestClass2 -->
+    </classes>
+  </test> <!-- AcceptanceTest(failed) -->
+</suite> <!-- Failed suite [Feature1] -->

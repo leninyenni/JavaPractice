@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Feature]">
+  <test name="UnitLevelTest(failed)">
+    <classes>
+      <class name="testNGtutorial.B4Method.TestClassMethod">
+        <methods>
+          <include name="afterClass"/>
+          <include name="unitLevel1"/>
+          <include name="beforeMethodWithParam"/>
+          <include name="unitLevel2"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="staticBeforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- testNGtutorial.B4Method.TestClassMethod -->
+    </classes>
+  </test> <!-- UnitLevelTest(failed) -->
+</suite> <!-- Failed suite [Feature] -->

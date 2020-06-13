@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2056" started-at="2020-05-16T15:56:16Z" finished-at="2020-05-16T15:56:18Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2056" started-at="2020-05-16T15:56:16Z" finished-at="2020-05-16T15:56:18Z">
+      <class name="sample.DataProviderWorkAround">
+        <test-method status="PASS" signature="integrationTest(java.util.Map)[pri:0, instance:sample.DataProviderWorkAround@1fdc050]" name="integrationTest" duration-ms="59" started-at="2020-05-16T21:26:18Z" data-provider="data-from-excel-hashmap" finished-at="2020-05-16T21:26:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{UserName=user1, Dob=01-Jan-2020, Password=pwd1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integrationTest -->
+        <test-method status="PASS" signature="integrationTest(java.util.Map)[pri:0, instance:sample.DataProviderWorkAround@1fdc050]" name="integrationTest" duration-ms="3" started-at="2020-05-16T21:26:18Z" data-provider="data-from-excel-hashmap" finished-at="2020-05-16T21:26:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{UserName=user2, Dob=02-Feb-2020, Password=pwd2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integrationTest -->
+        <test-method status="PASS" signature="integrationTest(java.util.Map)[pri:0, instance:sample.DataProviderWorkAround@1fdc050]" name="integrationTest" duration-ms="2" started-at="2020-05-16T21:26:18Z" data-provider="data-from-excel-hashmap" finished-at="2020-05-16T21:26:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{UserName=user3, Dob=03-Mar-2020, Password=pwd3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integrationTest -->
+        <test-method status="PASS" signature="run(java.lang.String)[pri:0, instance:sample.DataProviderWorkAround@1fdc050]" name="run" duration-ms="2" started-at="2020-05-16T21:26:18Z" data-provider="from-one-dimensional" finished-at="2020-05-16T21:26:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lenin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+        <test-method status="PASS" signature="run(java.lang.String)[pri:0, instance:sample.DataProviderWorkAround@1fdc050]" name="run" duration-ms="1" started-at="2020-05-16T21:26:18Z" data-provider="from-one-dimensional" finished-at="2020-05-16T21:26:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kumar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+        <test-method status="PASS" signature="run(java.lang.String)[pri:0, instance:sample.DataProviderWorkAround@1fdc050]" name="run" duration-ms="1" started-at="2020-05-16T21:26:18Z" data-provider="from-one-dimensional" finished-at="2020-05-16T21:26:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yenni]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+        <test-method status="PASS" signature="run(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sample.DataProviderWorkAround@1fdc050]" name="run" duration-ms="2" started-at="2020-05-16T21:26:18Z" data-provider="from-two-dimensional" finished-at="2020-05-16T21:26:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lenin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kumar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[yenni]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+        <test-method status="PASS" signature="run(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sample.DataProviderWorkAround@1fdc050]" name="run" duration-ms="1" started-at="2020-05-16T21:26:18Z" data-provider="from-two-dimensional" finished-at="2020-05-16T21:26:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vinu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[may be]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[girl]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+        <test-method status="PASS" signature="run(java.util.Map)[pri:0, instance:sample.DataProviderWorkAround@1fdc050]" name="run" duration-ms="2" started-at="2020-05-16T21:26:18Z" data-provider="from-Map-Object" finished-at="2020-05-16T21:26:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{username4=password4, username3=password3, username2=password2, username1=password1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+        <test-method status="PASS" signature="validateUser(java.lang.String, java.lang.String)[pri:0, instance:sample.DataProviderWorkAround@1fdc050]" name="validateUser" duration-ms="1" started-at="2020-05-16T21:26:18Z" data-provider="excelData" finished-at="2020-05-16T21:26:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUser -->
+        <test-method status="PASS" signature="validateUser(java.lang.String, java.lang.String)[pri:0, instance:sample.DataProviderWorkAround@1fdc050]" name="validateUser" duration-ms="2" started-at="2020-05-16T21:26:18Z" data-provider="excelData" finished-at="2020-05-16T21:26:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pqr@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pqr123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUser -->
+        <test-method status="PASS" signature="validateUser(java.lang.String, java.lang.String)[pri:0, instance:sample.DataProviderWorkAround@1fdc050]" name="validateUser" duration-ms="32" started-at="2020-05-16T21:26:18Z" data-provider="excelData" finished-at="2020-05-16T21:26:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[xyz@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xyz123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUser -->
+      </class> <!-- sample.DataProviderWorkAround -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

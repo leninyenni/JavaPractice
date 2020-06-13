@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RetryFailedTestSuite">
+    
+     <listeners>
+        <listener class-name="testNGtutorial.failedTestCasesRerun.NaveenAL.Analyzer.MyTransformer"/>
+  </listeners>
+  <test name="RetryMulitpleFailedTestCases">
+    <classes>
+      <class name="testNGtutorial.failedTestCasesRerun.NaveenAL.Analyzer.AllMyTests"/>
+    </classes>
+  </test> <!-- RetryMulitpleFailedTestCases -->
+</suite> <!-- RetryFailedTestSuite -->

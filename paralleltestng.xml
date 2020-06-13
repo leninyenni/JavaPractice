@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="2" parallel="tests">
+	<test name="facebook">
+		<parameter name="site" value="facebook" />
+		<classes>
+			<class name="seleniumPrograms.CrossBrowserScript" />
+		</classes>
+	</test>
+	<test name="twittertest">
+		<parameter name="site" value="twitter" />
+		<classes>
+			<class name="seleniumPrograms.CrossBrowserScript" />
+		</classes>
+	</test>
+	<test name="insta test">
+		<parameter name="site" value="instagram" />
+		<classes>
+			<class name="seleniumPrograms.CrossBrowserScript" />
+		</classes>
+	</test>
+</suite>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="chrome"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.023">
+  <properties />
+  
+  
+            <testcase name="tc_3" time="0.021" classname="testNGrelated.RegressionCases" />
+                <testcase name="tc_4" time="0.002" classname="testNGrelated.RegressionCases" />
+      
+</testsuite>
