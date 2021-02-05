@@ -9,7 +9,7 @@ public class AutomateComposeEmail {
 	
 	//launch Browser
 	System.setProperty("webdriver.chrome.driver",
-			"D://Drivers//chromedriver_win32//chromedriver.exe");
+			"C://Users//91939//drivers//chromedriver.exe");
 	WebDriver driver = new ChromeDriver();
 	Thread.sleep(10000);
 	//System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver.exe");
@@ -23,7 +23,7 @@ public class AutomateComposeEmail {
 	Thread.sleep(5000);
 	//Enter password and submit
 	//driver.findElement(By.name("password")).sendKeys("<pwd>");
-	driver.findElement(By.xpath("(//*[@aria-label='Enter your password'] [@name='password'])")).sendKeys("Lenin2925");
+	driver.findElement(By.xpath("(//*[@aria-label='Enter your password'] [@name='password'])")).sendKeys("trynewpwd");
 	driver.findElement(By.xpath("//*[text()='Next']")).click();
 	Thread.sleep(10000);
 	//Compose and send mail

@@ -5,20 +5,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BrowserNavigationExample {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
-				"D://Drivers//chromedriver_win32//chromedriver.exe");
+				"C://Users//91939//drivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://demo.actitime.com/login.do");
 		driver.findElement(By.xpath("//input[@id='username']")).sendKeys("admin");
 		String str=driver.findElement(By.xpath("//input[@id='username']")).getAttribute("value");
 		System.out.println(str);
-		//driver.navigate().to("//www.gmail.com");
+		driver.navigate().to("https://www.irctc.com");
 		
-		/*Thread.sleep(3000);
+		Thread.sleep(3000);
 		driver.navigate().back();
 		Thread.sleep(3000);
 		driver.navigate().forward();
 		Thread.sleep(3000);
 		driver.navigate().refresh();
-		driver.close();*/
+		driver.close();
 	}
 }

@@ -7,16 +7,16 @@ import org.openqa.selenium.interactions.Actions;
 public class DropdownMenu {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver",
-				"D://Drivers//chromedriver_win32//chromedriver.exe");
+				"C://Users//91939//drivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.actimind.com/");
 		Actions action = new Actions(driver);
 		// movetoElement - used for mouse hover
-		// Mouse hover on “ AREAS OF EXPERTISE ” menu
+		// Mouse hover on ï¿½ AREAS OF EXPERTISE ï¿½ menu
 		WebElement AreaOfExpertise = driver.findElement(By
 				.xpath("//a[contains(text(),'AREAS OF EXPERTISE')]"));
 		action.moveToElement(AreaOfExpertise).perform();
-		// Click on “ AREAS OF EXPERTISE ” menu
+		// Click on ï¿½ AREAS OF EXPERTISE ï¿½ menu
 			
 		WebElement cloudApp = driver.findElement(By.linkText("CLOUD APPLICATIONSS"));
 		//action.moveToElement(cloudApp).click().perform();

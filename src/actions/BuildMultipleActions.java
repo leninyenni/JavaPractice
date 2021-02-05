@@ -13,7 +13,7 @@ public class BuildMultipleActions {
 	public static void main(String[] args) {
 		String baseUrl = "http://www.facebook.com/"; 
 		System.setProperty("webdriver.chrome.driver",
-				"D://Drivers//chromedriver_win32//chromedriver.exe");
+				"C://Users//91939//drivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 
 		driver.get(baseUrl);

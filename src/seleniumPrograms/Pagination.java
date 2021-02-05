@@ -8,14 +8,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Pagination {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
-				"D://Drivers//chromedriver_win32//chromedriver.exe");
+				"C://Users//91939//drivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.gmail.com");
 		driver.findElement(By.name("identifier")).sendKeys("leninkumaryenni2");
 		driver.findElement(By.xpath("//*[text()='Next']")).click();
 		Thread.sleep(5000);
-		driver.findElement(By.name("password")).sendKeys("Lenin2925");
+		driver.findElement(By.name("password")).sendKeys("trynewpwd");
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//*[text()='Next']")).click();
 		Thread.sleep(5000);

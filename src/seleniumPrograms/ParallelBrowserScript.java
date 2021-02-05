@@ -31,7 +31,7 @@ public class ParallelBrowserScript {
 		else if (browser.equalsIgnoreCase("chrome")) {
 			// set path to chromedriver.exe
 			System.setProperty("webdriver.chrome.driver",
-					"D://Drivers//chromedriver_win32//chromedriver.exe");
+					"C://Users//91939//drivers//chromedriver.exe");
 			// create chrome instance
 			driver = new ChromeDriver();
 		}

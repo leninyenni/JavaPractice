@@ -10,7 +10,7 @@ public class PrintInfoWebFacebook extends BaseClass {
 		// Jus a sample try sometime
 		/*
 		 * try{ System.setProperty("webdriver.chrome.driver",
-		 * "D://Drivers//chromedriver_win32//chromedriver.exe");
+		 * "C://Users//91939//drivers//chromedriver.exe");
 		 * 
 		 * //driver1=initialize(); driver1=testbase();
 		 * driver1.manage().window().maximize();

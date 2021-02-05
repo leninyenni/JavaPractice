@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Feature" parallel="false">
+  <test name="UnitLevelTest">
+    <classes>
+      <parameter name="param" value="'I am beforeMethod'"/>
+      <class name="testNGtutorial.B4Method.TestClassMethod"/> 
+      <class name="testNGtutorial.B4Method.TestClassMethod2"/>      
+    </classes>
+  </test>
+  
+    <test name="Acceptance level">
+    <classes>
+      <parameter name="param" value="'I am beforeMethod'"/>
+      <class name="testNGtutorial.B4Method.TestClassMethod"/> 
+      <class name="testNGtutorial.B4Method.TestClassMethod2"/>      
+    </classes>
+  </test>
+</suite>

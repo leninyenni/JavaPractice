@@ -15,7 +15,7 @@ public class FirstTest {
 		driver.findElement(By.id("identifierId")).sendKeys("leninkumaryenni");
 		driver.findElement(By.id("identifierNext")).click();
 		driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
-		driver.findElement(By.name("password")).sendKeys("Lenin2925");
+		driver.findElement(By.name("password")).sendKeys("*****");
 		driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
 		driver.findElement(By.id("passwordNext")).click();
 		driver.close();

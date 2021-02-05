@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class CloseAnySpecifiedBrowser {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver",
-				"D://Drivers//chromedriver_win32//chromedriver.exe");
+				"C://Users//91939//drivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get(" https://www.naukri.com/ ");
 		// Set the expected title of the browser window which you want to close

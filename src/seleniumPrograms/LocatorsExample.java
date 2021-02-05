@@ -8,17 +8,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class LocatorsExample {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
-				"D://Drivers//chromedriver_win32//chromedriver.exe");
+				"C://Users//91939//drivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		// 2. enter the url -
 		driver.navigate().to("https://demo.actitime.com/login.do");
-		// Used “id” locator to find USERNAME text box
+		// Used ï¿½idï¿½ locator to find USERNAME text box
 		WebElement unTB = driver.findElement(By.name("username"));
 		//Clear the existing value present in the text box
 		unTB.clear();
 		// Enter value into the USERNAME text box
 		unTB.sendKeys("admin");
-		// Used “name” locator to find Password text box
+		// Used ï¿½nameï¿½ locator to find Password text box
 		WebElement passTB = driver.findElement(By.name("pwd"));
 		//Clear the existing value present in the text box
 		passTB.clear();

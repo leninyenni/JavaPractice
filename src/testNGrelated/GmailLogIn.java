@@ -32,7 +32,7 @@ public class GmailLogIn {
 		driver.findElement(By.id("identifierId")).sendKeys("leninkumaryenni");
 		driver.findElement(By.xpath(".//*[@class='RveJvd snByac']")).click();
 		Thread.sleep(3000);
-		driver.findElement(By.name("password")).sendKeys("Lenin2925");
+		driver.findElement(By.name("password")).sendKeys("trynewpwd");
 		driver.findElement(By.xpath(".//*[@class='RveJvd snByac']")).click();
 		String text = driver.findElement(By.className("ZrQ9j")).getText();
 		Assert.assertEquals("Len", "Len");

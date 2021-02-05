@@ -13,7 +13,7 @@ public class Chromebrokenlinksimages {
 
 	public static void main(String[] args) throws InterruptedException, MalformedURLException, IOException {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver","D://Drivers//chromedriver_win32//chromedriver.exe"); 
+		System.setProperty("webdriver.chrome.driver","C://Users//91939//driverss//chromedriver.exe");
 		WebDriver launchchrome = new ChromeDriver();
 		launchchrome.manage().window().maximize();
 		launchchrome.manage().deleteAllCookies();

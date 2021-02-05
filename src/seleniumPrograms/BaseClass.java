@@ -12,7 +12,7 @@ public class BaseClass {
 	{
 		
 		System.setProperty("webdriver.chrome.driver",
-				"D://Drivers//chromedriver_win32//chromedriver.exe");
+				"C://Users//91939//drivers//chromedriver.exe");
 		//driver= new ChromeDriver();
 		
 	}*/
@@ -31,7 +31,7 @@ public class BaseClass {
 	public static WebDriver testbase()
 	{
 		System.setProperty("webdriver.chrome.driver",
-				"D://Drivers//chromedriver_win32//chromedriver.exe");
+				"C://Users//91939//drivers//chromedriver.exe");
 		driver = new ChromeDriver();
 		return driver;
 	}

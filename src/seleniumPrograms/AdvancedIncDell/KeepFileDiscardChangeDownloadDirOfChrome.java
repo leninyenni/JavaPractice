@@ -12,7 +12,7 @@ public class KeepFileDiscardChangeDownloadDirOfChrome {
 	 public static void main(String[] args) throws IOException {
 		 
 		 System.setProperty("webdriver.chrome.driver",
-					"D://Drivers//chromedriver_win32//chromedriver.exe");
+					"C://Users//91939//drivers//chromedriver.exe");
 			// Setting new download directory path
 	 
 	        // Setting new download directory path

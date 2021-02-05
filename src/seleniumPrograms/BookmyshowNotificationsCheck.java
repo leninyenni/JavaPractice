@@ -6,7 +6,7 @@ public class BookmyshowNotificationsCheck {
 	public static WebDriver driver;
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
-				"D://Drivers//chromedriver_win32//chromedriver.exe");
+				"C://Users//91939//drivers//chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-notifications");
 		driver = new ChromeDriver(options);

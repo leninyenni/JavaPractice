@@ -11,13 +11,13 @@ public class CookiesHandling {
 	public static void main(String[] args) {
 		WebDriver driver;	
 		System.setProperty("webdriver.chrome.driver",
-				"D://Drivers//chromedriver_win32//chromedriver.exe");		
+				"C://Users//91939//drivers//chromedriver.exe");
 		driver=new ChromeDriver();        
 		driver.get("http://www.facebook.com");
        				
         // Input Email id and Password If you are already Register		
         driver.findElement(By.name("email")).sendKeys("leninkumaryenni");							
-        driver.findElement(By.name("pass")).sendKeys("Lenin2925");							
+        driver.findElement(By.name("pass")).sendKeys("trynewpwd");
         driver.findElement(By.xpath("//input[@aria-label='Log In']")).click();					
         
         // create file named Cookies to store Login Information		

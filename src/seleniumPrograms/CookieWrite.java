@@ -12,7 +12,7 @@ public class CookieWrite {
 	public static void main(String[] args) {
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver",
-				"D://Drivers//chromedriver_win32//chromedriver.exe");
+				"C://Users//91939//drivers//chromedriver.exe");
 		driver = new ChromeDriver();
 		try {
 			File file = new File("D:\\Selenium Training\\Cookies.data");

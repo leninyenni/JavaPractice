@@ -11,7 +11,7 @@ public class BigbossScript {
 	public static void main(String[] args) throws InterruptedException {
 		
 		System.setProperty("webdriver.chrome.driver",
-				"D://Drivers//chromedriver_win32//chromedriver.exe");
+				"C://Users//91939//drivers//chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
 		
 		for (int i=1;i<51;i++)

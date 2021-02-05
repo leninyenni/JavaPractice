@@ -12,7 +12,7 @@ public class ExplicitWait {
 	public static void main (String args[])
 	{
 		System.setProperty("webdriver.chrome.driver",
-				"D://Drivers//chromedriver_win32//chromedriver.exe");
+				"C://Users//91939//drivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		WebDriverWait wait=new WebDriverWait(driver, 20);
 		String eTitle = "Demo Guru99 Page";

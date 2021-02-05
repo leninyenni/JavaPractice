@@ -6,7 +6,10 @@ import org.openqa.selenium.WebElement;
 
 public class AutosuggestionEx_GoogleSearch extends BaseClass {
 	public static void main(String[] args) throws InterruptedException {
+		testbase();
 		driver.get("http://www.google.com");
+
+
 		//Enter Selenium in google search text box
 		driver.findElement(By.name("q")).sendKeys("selenium");
 		Thread.sleep(2000);
