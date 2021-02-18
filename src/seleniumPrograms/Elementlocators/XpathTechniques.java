@@ -19,7 +19,6 @@ public class XpathTechniques {
         System.out.println(title);
         WebDriverWait driverWait= new WebDriverWait(driver,10);
         driverWait.until(ExpectedConditions.titleIs(driver.getTitle()));
-
         driver.close();
     }
 
