@@ -12,7 +12,8 @@ public class FileUpload {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.gmail.com");
 		driver.findElement(By.name("identifier")).sendKeys("leninkumaryenni2@gmail.com");
-		driver.findElement(By.xpath("//*[text()='Next']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[text()='Next']/..")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.name("password")).sendKeys("trynewpwd");
 		driver.findElement(By.xpath("//*[text()='Next']")).click();

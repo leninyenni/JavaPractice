@@ -36,10 +36,10 @@ public class BaseClass {
 		return driver;
 	}
 	
-	BaseClass()
-	{
-		//code
-	}
+//	BaseClass()
+//	{
+//		//code
+//	}
 }
 
 

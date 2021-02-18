@@ -25,10 +25,5 @@ public class ChildBrowserPopUp {
 			// close all the browsers one by one
 			driver.close();
 		}
-		/*
-		 * Instead of using driver.close(), we can use driver.quit() to close
-		 * all the browsers at once
-		 */
-		// driver.quit();
 	}
 }
