@@ -23,8 +23,10 @@ public class RightClickActions {
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 		WebElement rightClickElement = driver.findElement(locator);
+		Thread.sleep(3000);
 		// contextClick() method to do right click on the element
 		action.contextClick(rightClickElement).build().perform();
+		Thread.sleep(3000);
 		WebElement getCopyText = driver.findElement(By
 				.cssSelector(".context-menu-icon-copy"));
 		// getText() method to get the text value

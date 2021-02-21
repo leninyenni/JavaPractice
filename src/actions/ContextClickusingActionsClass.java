@@ -21,6 +21,7 @@ public class ContextClickusingActionsClass {
 	WebElement link = driver.findElement(By.linkText("actiTIME Inc."));
 	//right click (context click) on actitime link
 	Actions actions = new Actions(driver);
+	//right click on link
 	actions.contextClick(link).perform();
 	
 	

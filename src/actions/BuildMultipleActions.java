@@ -29,8 +29,12 @@ public class BuildMultipleActions {
 			.doubleClick(txtUsername)
 			.contextClick()
 			.build();
-			
+
+
 		seriesOfActions.perform() ;
 
 		}
 }
+
+
+
