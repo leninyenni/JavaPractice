@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 public class DropdownMenu {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
 				"C://Users//91939//drivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -18,10 +18,11 @@ public class DropdownMenu {
 		action.moveToElement(AreaOfExpertise).perform();
 		// Click on � AREAS OF EXPERTISE � menu
 			
-		WebElement cloudApp = driver.findElement(By.linkText("CLOUD APPLICATIONSS"));
-		//action.moveToElement(cloudApp).click().perform();
-		
+		WebElement cloudApp = driver.findElement(By.linkText("CLOUD APPLICATIONS"));
+		action.moveToElement(cloudApp).click().perform();
+
+		Thread.sleep(3000);
 		//composite multiple actions can be achieved using the below statement
-		action.moveToElement(AreaOfExpertise).click(cloudApp).build().perform();
+		/*action.moveToElement(AreaOfExpertise).click(cloudApp).build().perform();*/
 	}
 }
