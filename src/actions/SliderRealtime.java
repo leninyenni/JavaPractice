@@ -1,11 +1,11 @@
 package actions;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import seleniumPrograms.HandlingPopUps.UsingJavaScriptExecutor;
 
 public class SliderRealtime extends UsingJavaScriptExecutor {
@@ -29,19 +29,9 @@ public class SliderRealtime extends UsingJavaScriptExecutor {
         drawBorder(audiomenu, driver);
         a.moveToElement(audiomenu).build().perform();
         Thread.sleep(2000);
-
         audiomenu.click();
         Thread.sleep(5000);
 
-        WebElement slider=driver.findElement(By.xpath("//span[text()='Price']/../..//following-sibling::div[2]"));
-        int xCoord = slider.getLocation().getX();
-
-        Dimension sliderSize = slider.getSize();
-
-        int sliderWidth = sliderSize.getWidth();
-        System.out.println(sliderWidth);
-        //we can use clickandhold method as well
-        Actions builder = new Actions(driver);
         /*builder.moveToElement(slider)
                 .click()
                 .dragAndDropBy
@@ -49,11 +39,39 @@ public class SliderRealtime extends UsingJavaScriptExecutor {
                 .build()
                 .perform();
         builder.release();*/
-        builder.clickAndHold(slider).moveByOffset(50,50)
-                .build()
-                .perform();
-        builder.release();
+        WebElement slider = driver.findElement(By.xpath("//span[text()='Price']/../..//following-sibling::div[2]"));
+        WebElement leftslider = driver.findElement(By.xpath("(//span[text()='Price']/../..//following-sibling::div[2]/div/div/div[1])[1]"));
+        int width = slider.getSize().getWidth();
+        System.out.println(width);
+        Actions move = new Actions(driver);
+        Action action = move.dragAndDropBy(leftslider, ((width * 25) / 100), 0).build();
+        action.perform();
+        Thread.sleep(10000);
+        //move the slider to in right to left direction, use '-'
+        By locator = By.xpath("(//span[text()='Price']/../..//following-sibling::div[2]/div/div/div[1])[2]");
+        // retryElement(locator, driver);
+        move.dragAndDropBy(driver.findElement(locator), -((width * 25) / 100), 0).build().perform();
+        System.out.println("Slider moved");
+    }
 
+    //method to overcome stale element reference exception
+    public static void retryElement(By locator, WebDriver driver) {
+        //variable to count the attempts
+        int attempts = 0;
+        //number of times this code should get executed
+        while (attempts < 2) {
+            try {
+                //wait explicitly till desired element is visible and clickable
+                WebDriverWait wait = new WebDriverWait(driver, 30L);
+                wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+                wait.until(ExpectedConditions.elementToBeClickable(locator));
+                //click on the locator once it is found and terminate the loop
+                driver.findElement(locator);
+                break;
+            } catch (StaleElementReferenceException e) {
+            }
+            attempts++;
+        }
     }
 }
 

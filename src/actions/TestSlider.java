@@ -22,9 +22,6 @@ public class TestSlider {
     String url = "http://jqueryui.com/resources/demos/slider/default.html";
 
         By slider  = By.xpath("//*[@id='slider']");
-    /*By hiddenPriceLocator  = By.id("sliderPrixPropriete");
-    By enterPriceLocator   = By.id("PrixPropriete");
-    By plusLocator         = By.id("PrixProprietePlus");*/
 
     @BeforeTest
     public void setUp() {
