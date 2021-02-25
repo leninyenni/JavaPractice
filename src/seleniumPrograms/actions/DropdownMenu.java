@@ -1,4 +1,4 @@
-package actions;
+package seleniumPrograms.actions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,7 +22,7 @@ public class DropdownMenu {
 		action.moveToElement(cloudApp).click().perform();
 
 		Thread.sleep(3000);
-		//composite multiple actions can be achieved using the below statement
+		//composite multiple seleniumPrograms.actions can be achieved using the below statement
 		/*action.moveToElement(AreaOfExpertise).click(cloudApp).build().perform();*/
 	}
 }

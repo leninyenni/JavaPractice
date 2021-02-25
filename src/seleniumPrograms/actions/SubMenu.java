@@ -1,4 +1,4 @@
-package actions;
+package seleniumPrograms.actions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,8 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import seleniumPrograms.HandlingPopUps.UsingJavaScriptExecutor;
-
-import java.util.List;
 
 public class SubMenu extends UsingJavaScriptExecutor {
 
