@@ -1,6 +1,6 @@
 package javaRelated.ConstructorExamples;
 
-import seleniumPrograms.FirstTest;
+import seleniumPrograms.Notes.FirstTest;
 
 public class Test1 {
 	

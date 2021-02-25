@@ -4,19 +4,19 @@
 	<test name="facebook">
 		<parameter name="site" value="facebook" />
 		<classes>
-			<class name="seleniumPrograms.CrossBrowserScript" />
+			<class name="seleniumPrograms.Notes.CrossBrowserScript" />
 		</classes>
 	</test>
 	<test name="twittertest">
 		<parameter name="site" value="twitter" />
 		<classes>
-			<class name="seleniumPrograms.CrossBrowserScript" />
+			<class name="seleniumPrograms.Notes.CrossBrowserScript" />
 		</classes>
 	</test>
 	<test name="insta test">
 		<parameter name="site" value="instagram" />
 		<classes>
-			<class name="seleniumPrograms.CrossBrowserScript" />
+			<class name="seleniumPrograms.Notes.CrossBrowserScript" />
 		</classes>
 	</test>
 </suite>

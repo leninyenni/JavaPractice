@@ -4,12 +4,12 @@
   <test name="FirefoxTest(failed)" parallel="tests">
     <parameter name="browser" value="Firefox"/>
     <classes>
-      <class name="seleniumPrograms.CrossBrowserScript">
+      <class name="seleniumPrograms.Notes.CrossBrowserScript">
         <methods>
           <include name="setup"/>
           <include name="testParameterWithXML"/>
         </methods>
-      </class> <!-- seleniumPrograms.CrossBrowserScript -->
+      </class> <!-- seleniumPrograms.Notes.CrossBrowserScript -->
     </classes>
   </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

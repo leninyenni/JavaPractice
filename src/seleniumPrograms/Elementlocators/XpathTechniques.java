@@ -3,9 +3,8 @@ package seleniumPrograms.Elementlocators;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import seleniumPrograms.BaseClass;
 
-import static seleniumPrograms.BaseClass.testbase;
+import static seleniumPrograms.Notes.BaseClass.testbase;
 
 public class XpathTechniques {
     public static WebDriver driver;

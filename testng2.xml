@@ -2,12 +2,12 @@
 <suite name="Parallel test suite" parallel="methods" thread-count="2">
 	<test name="Regression 1">
 		<classes>
-			<class name="seleniumPrograms.TestParallelOne" />
+			<class name="seleniumPrograms.Notes.TestParallelOne" />
 		</classes>
 	</test>
 	<test name="Regression 2">
 		<classes>
-			<class name="seleniumPrograms.TestParallelOne" />
+			<class name="seleniumPrograms.Notes.TestParallelOne" />
 		</classes>
 	</test>
 

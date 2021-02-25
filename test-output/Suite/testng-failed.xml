@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="seleniumPrograms.CreateSignUpFacebook">
+      <class name="seleniumPrograms.Notes.CreateSignUpFacebook">
         <methods>
           <include name="createsignup"/>
         </methods>
-      </class> <!-- seleniumPrograms.CreateSignUpFacebook -->
+      </class> <!-- seleniumPrograms.Notes.CreateSignUpFacebook -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
