@@ -1,9 +1,0 @@
-For Abstract class, its not possible to create object either directly or indirectly
-Anyway, we can't create object for abstract class either directly or indirectly
-but abstract class can contain constructor
-Need:
-The main objective of abstract class constructor is to perform initialization
-for the instance variables which are inheriting from abstract class to the child class
--->Whenever we creating child class object, automatically abstract class constructor will be
-executed to perform initialization for the instance variables which are inheriting from the abstract class
-(this is we call code reusability)

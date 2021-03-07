@@ -1,5 +1,6 @@
 package seleniumPrograms.Waits;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,6 +22,8 @@ public class ExplicitWait {
         WebDriverWait wait = new WebDriverWait(driver, 20);
         // Here we will wait until element is not visible, if element is visible then it will return web element
         // or else it will throw exception
+
+        /*WebElement elemn= driver.findElement(By.xpath("//p[text()='WebDriver']"));*/
         WebElement element = wait
                 .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[text()='WebDriver']")));
         // if element found then we will use- In this example I just called isDisplayed method

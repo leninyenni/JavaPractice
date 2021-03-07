@@ -15,8 +15,7 @@ public class DatePicker {
 				.id("ctl00_mainContent_txt_Fromdate"));
 		String dateValue = "11-02-2019";
 		selectDateByJS(driver, element, dateValue);
-		
-		
+
 	}
 	public static void selectDateByJS(WebDriver driver, WebElement element,String dateVal) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;

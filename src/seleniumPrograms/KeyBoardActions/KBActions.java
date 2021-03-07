@@ -9,7 +9,5 @@ public class KBActions {
 		Thread.sleep(3000);
 		WM.MaximizeBrowser();
 		Thread.sleep(3000);
-
 	}
-
 }

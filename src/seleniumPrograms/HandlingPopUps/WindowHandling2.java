@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.Iterator;
 import java.util.Set;
 
-public class WindowHandling2 extends  UsingJavaScriptExecutor{
+public class WindowHandling2 extends UsingJavaScriptExecutor {
 
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver",
@@ -20,10 +20,22 @@ public class WindowHandling2 extends  UsingJavaScriptExecutor{
         //print the title of the main window
         System.out.println("The title of the main window :" + driver.getTitle());
         WebElement wb = driver.findElement(By.xpath("//*[@id='Tabbed']/a/button"));
-        drawBorder(wb,driver);
-        flash(wb,driver);
+        String parentwindow = driver.getWindowHandle();
+        System.out.println(parentwindow);
+        drawBorder(wb, driver);
+        flash(wb, driver);
         wb.click();
         Thread.sleep(3000);
+        String childwindow = driver.getWindowHandle();
+        System.out.println(childwindow);
+        /*driver.switchTo().window(parentwindow);
+        Thread.sleep(3000);*/
+        if (parentwindow.equals(childwindow)) {
+            System.out.println("Control was not shifted");
+        } else {
+            System.out.println("control was shifted for driver so you have to bring it back");
+        }
+        driver.findElement(By.xpath("//a[@class='link youtube']")).click();
         //It returns the no. of the windows opened by the web driver and handle all new opened window.
         Set<String> set = driver.getWindowHandles();
         //to get the value from set object, we will use iterator

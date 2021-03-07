@@ -14,13 +14,13 @@ public class BigbossScript {
 				"C://Users//91939//drivers//chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
 		
-		for (int i=1;i<51;i++)
+		for (int i=1;i<5;i++)
 		{
 			driver.get("https://www.scooptimes.com/television/bigg-boss-telugu-vote/9654");
-			WebElement rahul= driver.findElement(By.xpath("//input[@id='PDI_answer48117298']"));
+			WebElement Abhijit= driver.findElement(By.xpath("//input[@id='PDI_answer49432894']"));
 			WebElement vote=driver.findElement(By.xpath("//a[contains(@class,'css-vote-button')]"));
 			WebDriverWait wait = new WebDriverWait (driver, 20);
-			wait.until(ExpectedConditions.visibilityOf(rahul)).click();
+			wait.until(ExpectedConditions.visibilityOf(Abhijit)).click();
 			wait.until(ExpectedConditions.visibilityOf(vote)).click();
 			Thread.sleep(2000);
 			

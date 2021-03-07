@@ -12,7 +12,7 @@ also those should be first statement
 
 
 Constructor overloading: is acceptable in JAVA
-01.within a class we can write any number of constructors but they should be argumented
+01.within a class we can write anyec number of constructors but they should be argumented
 02.from one constructor to other constructor calling we can use "this()" keyword
 
 Constructor inheritence and overriding:
