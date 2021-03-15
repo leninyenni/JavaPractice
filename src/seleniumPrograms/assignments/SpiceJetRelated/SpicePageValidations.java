@@ -21,7 +21,7 @@ public class SpicePageValidations extends SpiceJetAutomation {
 
     @Test(description = "Verify BookAFlight")
     public void test2() {
-        driver.findElement(By.linkText("Flights")).click();
+       driver.findElement(By.linkText("Flights")).click();
     }
 
     @Test(description = "verify flow of selections")

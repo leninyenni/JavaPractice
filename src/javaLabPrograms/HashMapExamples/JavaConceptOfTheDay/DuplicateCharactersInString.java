@@ -34,8 +34,8 @@ public class DuplicateCharactersInString {
 		}
 	}
 	public static void main(String[] args) {
-		duplicateCharCount("JavaJ2EE");
-		duplicateCharCount("Fresh Fish");
-		duplicateCharCount("Better Butter");
+		duplicateCharCount("JJavaJ2EE");
+		/*duplicateCharCount("Fresh Fish");
+		duplicateCharCount("Better Butter");*/
 	}
 }
