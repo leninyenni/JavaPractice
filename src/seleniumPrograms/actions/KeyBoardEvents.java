@@ -12,17 +12,17 @@ public class KeyBoardEvents {
 		System.setProperty("webdriver.chrome.driver",
 				"C://Users//91939//drivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		Actions act= new Actions(driver);
 	driver.get("http://www.google.com");
 	//Enter Selenium in google search text box
 	driver.findElement(By.name("q")).sendKeys("selenium");
 	Thread.sleep(2000);
-	Actions act= new Actions(driver);
+	//actions on element
 	act.sendKeys(Keys.DOWN).build().perform();
 	Thread.sleep(2000);
 	act.sendKeys(Keys.DOWN).build().perform();
 	Thread.sleep(2000);
 	act.sendKeys(Keys.ENTER).build().perform();
 	Thread.sleep(2000);
-
 }
 }

@@ -1,6 +1,5 @@
 package interviewQuestions;
 
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -19,7 +18,6 @@ public class WaitCommands extends UsingJavaScriptExecutor {
 		
 		driver.get("https://www.google.com");
 		driver.manage().window().maximize();
-		
 		//Explicit wait
 		WebDriverWait wait= new WebDriverWait(driver,20);
 		/*WebElement element= driver.findElement(By.xpath(".//*[@name='q']"));*/

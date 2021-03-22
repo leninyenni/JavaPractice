@@ -53,7 +53,6 @@ public class robo {
         robot.keyRelease(KeyEvent.VK_RIGHT);
         robot.keyPress(KeyEvent.VK_BACK_SPACE);
         robot.keyRelease(KeyEvent.VK_BACK_SPACE);
-
         // Press enter
         robot.keyPress(KeyEvent.VK_ENTER);
         robot.keyRelease(KeyEvent.VK_ENTER);

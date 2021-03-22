@@ -11,5 +11,8 @@ public class ChildTwo extends Parent{
 		
 		Parent P= new ChildTwo();
 		P.learn();
+
+		Parent p2 = new ChildOne();
+		p2.learn();
 	}
 }
