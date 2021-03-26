@@ -1,4 +1,4 @@
-package JavaIntroduction.inheritencConcepts;
+package JavaIntroduction.overloadingConcepts;
 
 public class OverLoadingConcept {
 	
@@ -14,7 +14,7 @@ public class OverLoadingConcept {
 	
 	void add(int a, String str)
 	{
-		System.out.println("My own"+"-"+a+"-"+str);
+		System.out.println("My number is"+"-"+a+"-"+str);
 	}
 	
 
