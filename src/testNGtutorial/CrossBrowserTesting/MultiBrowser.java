@@ -16,7 +16,7 @@ public class MultiBrowser {
 		// If the browser is Firefox, then do this
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-					"C://Users//91939//drivers//chromedriver.exe");
+					"D:\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 			// If browser is IE, then do this
 		} else if (browser.equalsIgnoreCase("ff")) {

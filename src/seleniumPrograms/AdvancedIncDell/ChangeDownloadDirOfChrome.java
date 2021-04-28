@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class ChangeDownloadDirOfChrome {
 	public static void main(String[] args) throws IOException {
 		System.setProperty("webdriver.chrome.driver",
-				"C://Users//91939//drivers//chromedriver.exe");
+				"D:\\Drivers\\chromedriver.exe");
 		// Setting new download directory path
 		Map<String, Object> prefs = new HashMap<String, Object>();
 		// Use File.separator as it will work on any OS

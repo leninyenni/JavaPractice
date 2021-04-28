@@ -1,5 +1,7 @@
 package javaLabPrograms.practiceagain;
 import java.util.Arrays;
+
+//need changes
 public class RemoveDuplicateElementsInArrayExampleMylogic {
 	static int[] removeduplicates(int[] arr, int size) {
 		if (size >= 1) {
@@ -22,7 +24,7 @@ public class RemoveDuplicateElementsInArrayExampleMylogic {
 		return arr;
 	}
 	public static void main(String[] args) {
-		int arr[] = { 20, 60, 10, 20, 20, 30, 30, 40, 50, 50, 50, 60 };
+		int arr[] = { 20, 60, 10, 20, 10 };
 		Arrays.sort(arr);
 		System.out.println(Arrays.toString(arr));
 		int result[] = removeduplicates(arr, arr.length);

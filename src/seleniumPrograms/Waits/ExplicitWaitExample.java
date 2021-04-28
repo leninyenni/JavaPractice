@@ -11,7 +11,7 @@ import seleniumPrograms.HandlingPopUps.UsingJavaScriptExecutor;
 
 public class ExplicitWaitExample extends UsingJavaScriptExecutor {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C://Users//91939//drivers//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
         // Start browser
         WebDriver driver = new ChromeDriver();
         // Start application

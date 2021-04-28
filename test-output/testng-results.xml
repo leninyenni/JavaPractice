@@ -6,7 +6,7 @@
     <groups>
     </groups>
     <test name="Default test" duration-ms="2056" started-at="2020-05-16T15:56:16Z" finished-at="2020-05-16T15:56:18Z">
-      <class name="sample.DataProviderWorkAround">
+      <class name="testNGrelated.DataProviderWorkAround">
         <test-method status="PASS" signature="integrationTest(java.util.Map)[pri:0, instance:sample.DataProviderWorkAround@1fdc050]" name="integrationTest" duration-ms="59" started-at="2020-05-16T21:26:18Z" data-provider="data-from-excel-hashmap" finished-at="2020-05-16T21:26:18Z">
           <params>
             <param index="0">
@@ -174,7 +174,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUser -->
-      </class> <!-- sample.DataProviderWorkAround -->
+      </class> <!-- testNGrelated.DataProviderWorkAround -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

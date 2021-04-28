@@ -1,13 +1,14 @@
 package seleniumPrograms.HandlingPopUps;
-import java.awt.AWTException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.awt.*;
 public class FileUploadPopup_Demo {
 	public static void main(String[] args) throws InterruptedException,
 			AWTException {
 		System.setProperty("webdriver.chrome.driver",
-				"C://Users//91939//drivers//chromedriver.exe");
+				"D:\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://nervgh.github.io/pages/angular-file-upload/examples/simple");
 		Thread.sleep(5000);

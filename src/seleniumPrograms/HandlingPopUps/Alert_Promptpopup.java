@@ -1,20 +1,15 @@
 package seleniumPrograms.HandlingPopUps;
 
-import java.io.File;
-
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxBinary;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
 
 public class Alert_Promptpopup extends UsingJavaScriptExecutor {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver",
-                "C://Users//91939//drivers//chromedriver.exe");
+                "D:\\Drivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         // Enter the url
         driver.get("http://www.tizag.com/javascriptT/javascriptprompt.php");

@@ -19,7 +19,7 @@ public class PieChartRead {
 	@BeforeTest
 	public void setup() throws Exception {
 		System.setProperty("webdriver.chrome.driver",
-				"C://Users//91939//drivers//chromedriver.exe");
+				"D:\\Drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);

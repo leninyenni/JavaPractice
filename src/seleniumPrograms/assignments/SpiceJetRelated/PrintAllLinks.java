@@ -29,7 +29,7 @@ public class PrintAllLinks {
     @BeforeTest
     public void beforeTest() {
         System.setProperty("webdriver.chrome.driver",
-                "C://Users//91939//drivers//chromedriver.exe");
+                "D:\\Drivers\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }

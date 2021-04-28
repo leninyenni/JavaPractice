@@ -1,6 +1,5 @@
 package seleniumPrograms.KeyBoardActions;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,12 +7,23 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Utilities {
 
-    public WebDriver driver;
+    public static WebDriver driver;
 
-    Utilities() {
-        System.setProperty("webdriver.chrome.driver",
-                "C://Users//91939//drivers//chromedriver.exe");
-        driver = new ChromeDriver();
+    Utilities(String browser) {
+
+        if (browser=="chrome")
+        {
+            System.setProperty("webdriver.chrome.driver",
+                    "D:\\Drivers\\chromedriver.exe");
+            driver = new ChromeDriver();
+        }
+        if (browser=="firefox")
+        {
+            System.setProperty("webdriver.gecko.driver",
+                    "D://Drivers//geckodriver.exe");
+            driver = new FirefoxDriver();
+        }
+
     }
 
     By label1 = By.id("_dKg");
@@ -21,14 +31,14 @@ public class Utilities {
     By label3 = By.id("_cKg");
     By label4 = By.id("_bKg");
 
-    public void openBrowser(String url) {
+    public static void openBrowser(String url) {
         driver.get(url);
     }
 
-    public void MaximizeBrowser() {
+    public static void MaximizeBrowser() {
         driver.manage().window().maximize();
     }
 
-    public void QuitBrowser() { driver.quit();
+    public static void QuitBrowser() { driver.quit();
     }
 }

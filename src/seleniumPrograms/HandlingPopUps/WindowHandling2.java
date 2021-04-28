@@ -12,7 +12,7 @@ public class WindowHandling2 extends UsingJavaScriptExecutor {
 
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver",
-                "C://Users//91939//drivers//chromedriver.exe");
+                "D:\\Drivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         //navigate to the url
@@ -27,6 +27,8 @@ public class WindowHandling2 extends UsingJavaScriptExecutor {
         wb.click();
         Thread.sleep(3000);
         String childwindow = driver.getWindowHandle();
+        Set<String> nowWindows= driver.getWindowHandles();
+        System.out.println("All handles after clicked on click button:"+nowWindows);
         System.out.println(childwindow);
         /*driver.switchTo().window(parentwindow);
         Thread.sleep(3000);*/

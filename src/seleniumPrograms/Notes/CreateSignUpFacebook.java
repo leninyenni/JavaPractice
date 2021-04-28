@@ -25,7 +25,7 @@ public class CreateSignUpFacebook {
 	public static void createsignup() throws InterruptedException  {
 		
 		System.setProperty("webdriver.chrome.driver",
-				"C://Users//91939//drivers//chromedriver.exe");
+				"D:\\Drivers\\chromedriver.exe");
 		driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com");

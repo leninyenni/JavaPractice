@@ -1,18 +1,21 @@
 package seleniumPrograms.DropDownHandling;
 
-import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class FacebookDD {
 
 	@Test
 	public void selectDropdown() throws Exception {
-		WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver",
+				"D:\\Drivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com");
 		driver.manage().window().maximize();
 

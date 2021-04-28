@@ -10,12 +10,11 @@ import org.openqa.selenium.interactions.Actions;
 
 public class BuildMultipleActions {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		String baseUrl = "http://www.facebook.com/"; 
 		System.setProperty("webdriver.chrome.driver",
-				"C://Users//91939//drivers//chromedriver.exe");
+				"D:\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-
 		driver.get(baseUrl);
 		WebElement txtUsername = driver.findElement(By.id("email"));
 
@@ -29,7 +28,6 @@ public class BuildMultipleActions {
 			.doubleClick(txtUsername)
 			.contextClick()
 			.build();
-
 
 		seriesOfActions.perform() ;
 

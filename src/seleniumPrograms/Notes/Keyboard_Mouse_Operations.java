@@ -8,12 +8,12 @@ public class Keyboard_Mouse_Operations {
 	public static void main(String[] args) throws InterruptedException,
 			AWTException {
 		System.setProperty("webdriver.chrome.driver",
-				"C://Users//91939//drivers//chromedriver.exe");
+				"D:\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		// 2. enter the url -
 		driver.navigate().to("https://demo.actitime.com/login.do");
 		Thread.sleep(5000);
-		// Creating an object of Robot Class
+		// Creating an object of javaLearning.Robot Class
 		Robot r = new Robot();
 		// move the mouse by x and y coordinate
 		r.mouseMove(300, 500);

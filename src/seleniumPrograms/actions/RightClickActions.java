@@ -10,7 +10,7 @@ public class RightClickActions {
 	public static void main(String args[]) throws InterruptedException {
 		// Instantiating the WebDriver interface.
 		System.setProperty("webdriver.chrome.driver",
-				"C://Users//91939//drivers//chromedriver.exe");
+				"D:\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		// Open the required URL
 		driver.get("http://swisnl.github.io/jQuery-contextMenu/demo.html");

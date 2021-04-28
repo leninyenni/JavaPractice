@@ -13,7 +13,7 @@ public class SliderTwo {
         public void Test1() throws InterruptedException {
         /*WebDriverManager.chromedriver().setup();*/
                 System.setProperty("webdriver.chrome.driver",
-                        "C://Users//91939//drivers//chromedriver.exe");
+                        "D:\\Drivers\\chromedriver.exe");
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://jqueryui.com/slider/ZWSP");

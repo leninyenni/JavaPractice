@@ -13,7 +13,7 @@ public class WaitCommands extends UsingJavaScriptExecutor {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "C://Users//91939//drivers//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
 		
 		driver.get("https://www.google.com");

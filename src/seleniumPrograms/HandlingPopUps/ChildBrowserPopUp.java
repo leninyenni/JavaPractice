@@ -1,11 +1,14 @@
 package seleniumPrograms.HandlingPopUps;
-import java.util.Set;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.Set;
+
 public class ChildBrowserPopUp {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver",
-				"C://Users//91939//drivers//chromedriver.exe");
+				"D:\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get(" https://www.naukri.com/ ");
 		// using getWindowHandles(), get a set of window handle IDs
@@ -15,6 +18,7 @@ public class ChildBrowserPopUp {
 		System.out
 				.println("Number of browser windows opened on the system is : "
 						+ count);
+		System.out.println(allWindowHandles);
 		for (String windowHandle : allWindowHandles) {
 			// switch to each browser window
 			driver.switchTo().window(windowHandle);

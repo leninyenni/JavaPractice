@@ -8,9 +8,8 @@ import org.openqa.selenium.interactions.Actions;
 
 public class KeyBoardEvents {
 	public static void main(String[] args) throws InterruptedException {
-		
 		System.setProperty("webdriver.chrome.driver",
-				"C://Users//91939//drivers//chromedriver.exe");
+				"D:\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		Actions act= new Actions(driver);
 	driver.get("http://www.google.com");

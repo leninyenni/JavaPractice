@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ImplicitWaitEx {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C://Users//91939//drivers//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
         // Opening a browser
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();

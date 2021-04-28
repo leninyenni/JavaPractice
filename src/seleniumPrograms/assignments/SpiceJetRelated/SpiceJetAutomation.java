@@ -28,7 +28,7 @@ public class SpiceJetAutomation {
 
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver",
-                "C://Users//91939//drivers//chromedriver.exe");
+                "D:\\Drivers\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://www.spicejet.com/");
         driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);

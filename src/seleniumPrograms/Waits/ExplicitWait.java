@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ExplicitWait {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "C://Users//91939//drivers//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
         // Start browser
         WebDriver driver = new ChromeDriver();
         // Start application

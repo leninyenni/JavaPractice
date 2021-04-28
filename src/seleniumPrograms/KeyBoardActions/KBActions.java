@@ -1,13 +1,16 @@
 package seleniumPrograms.KeyBoardActions;
 
 
-public class KBActions {
+public class KBActions extends Utilities {
 
+	public KBActions(String browser){
+		super(browser);
+	}
 	public static void main(String[] args) throws Exception {
-		Utilities WM = new Utilities();
-		WM.openBrowser("https://www.google.com/advanced_search");
+		new KBActions("firefox");
+		openBrowser("https://www.google.com/advanced_search");
 		Thread.sleep(3000);
-		WM.MaximizeBrowser();
+		MaximizeBrowser();
 		Thread.sleep(3000);
 	}
 }
