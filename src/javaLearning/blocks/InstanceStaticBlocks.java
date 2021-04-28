@@ -1,4 +1,4 @@
-package javaLearning;
+package javaLearning.blocks;
 
 public class InstanceStaticBlocks {
 	

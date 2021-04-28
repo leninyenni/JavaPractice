@@ -1,4 +1,4 @@
-package javaLearning;
+package javaLearning.variables;
 
 public class InstanceStaticDiff {
 	int a=10;// instance variable

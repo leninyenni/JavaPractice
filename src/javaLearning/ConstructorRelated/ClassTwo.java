@@ -1,4 +1,4 @@
-package javaLearning;
+package javaLearning.ConstructorRelated;
 
 public class ClassTwo {
     int b;

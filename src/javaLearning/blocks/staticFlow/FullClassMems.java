@@ -1,4 +1,4 @@
-package javaLearning.staticFlow;
+package javaLearning.blocks.staticFlow;
 
 public class FullClassMems {
     static int i = 10;

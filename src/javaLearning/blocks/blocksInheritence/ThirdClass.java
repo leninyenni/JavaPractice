@@ -1,4 +1,4 @@
-package javaLearning.ConstructorRelated.blocksInheritence;
+package javaLearning.blocks.blocksInheritence;
 
 public class ThirdClass {
 	static

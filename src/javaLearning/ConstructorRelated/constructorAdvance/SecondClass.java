@@ -17,7 +17,7 @@ public class SecondClass {
     public static void main(String[] args) {
         SecondClass ob = new SecondClass(25); // when object B was created for Child Class B, automatically Super class constructors get called
         try {
-            Class.forName("javaLearning.ConstructorRelated.blocksInheritence.FirstClass");
+            Class.forName("javaLearning.blocks.blocksInheritence.FirstClass");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
