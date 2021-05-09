@@ -10,7 +10,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import seleniumPrograms.HandlingPopUps.UsingJavaScriptExecutor;
 
 public class WaitCommands extends UsingJavaScriptExecutor {
-
 	public static void main(String[] args) {
 		
 		System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");

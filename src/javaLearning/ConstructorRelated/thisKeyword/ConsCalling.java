@@ -6,7 +6,6 @@ public class ConsCalling {
 	ConsCalling() {
 		this(10);
 		System.out.println("zero arugmented constructor");
-
 	}
 
 	ConsCalling(int a) {

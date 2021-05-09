@@ -1,7 +1,7 @@
 package interviewQuestions.telegramSource.InterviewPrograms;
 public class GiveFrequentElementsJaggu {
 	public static void main(String[] args) {
-		int arr[] = {2,2,3,3};
+		int arr[] = {2,2,3,3,2};
 		int temp[] = new int[arr.length];
 		int element = 0;
 		int count = 0;

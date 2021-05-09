@@ -5,15 +5,17 @@ import java.util.Map.Entry;
 import java.util.Set;
 public class MostRepeatedNumEnhancedByL {
 	public static void main(String[] args) {
-		int[] arr = {  2, 12, 5, 4, 12, 3, 4, 2, 4, 5, 12, 5, 14, 3, 5,12};
+		int[] arr = {  1,1,2,2,3,3,3};
 		int maxKey = 0;
 		int maxValue = 0;
 		HashMap<Integer, Integer> hash = new HashMap<Integer, Integer>();
 		for (int i = 0; i < arr.length; i++) {
-			if (!hash.containsKey(arr[i]))
+			if (!hash.containsKey(arr[i])) {
 				hash.put(arr[i], 1);
-			else
+			}
+			else {
 				hash.put(arr[i], hash.get(arr[i]) + 1);
+			}
 			maxValue=(hash.get(arr[i]));
 		}
 		
