@@ -8,7 +8,16 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import seleniumPrograms.HandlingPopUps.UsingJavaScriptExecutor;
 
+//use Cordinates chrome plug in to get values
+//Point class to get location of element and then use
+//WebElement ele= driver.findElement(By.xpath("x-path"));
+//Point point = ele.getLocation();
+//int xcord = point.getX();
+//int ycord = point.getY();
+
+
 public class SliderRealtime extends UsingJavaScriptExecutor {
+
 
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver",

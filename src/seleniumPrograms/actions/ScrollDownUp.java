@@ -14,9 +14,7 @@ public class ScrollDownUp {
 		driver.get("https://www.softwaretestingmaterial.com");
 		// sleep for 3secs to load the page
 		Thread.sleep(3000);
-		// SCROLL DOWN
-		action.sendKeys(Keys.PAGE_DOWN).build().perform();
-		Thread.sleep(3000);
+
 		// SCROLL UP
 		action.sendKeys(Keys.PAGE_UP).build().perform();
 		// driver.close();

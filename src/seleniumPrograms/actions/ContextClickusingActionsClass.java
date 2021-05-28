@@ -22,12 +22,12 @@ public class ContextClickusingActionsClass {
 	//right click (context click) on actitime link
 	Actions actions = new Actions(driver);
 	//right click on link
-	actions.contextClick(link).perform();
+	actions.contextClick(link).build().perform();
 
 	//press 'w' from the keyboard for opening in a new window
 	Robot r = new Robot();
 	r.keyPress(KeyEvent.VK_W);
-	r.keyRelease(KeyEvent.VK_W);	
+	r.keyRelease(KeyEvent.VK_W);
 	
 	}
 }

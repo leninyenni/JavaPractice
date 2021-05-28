@@ -21,7 +21,7 @@ public class MultiBrowser {
 			// If browser is IE, then do this
 		} else if (browser.equalsIgnoreCase("ff")) {
 			// Here I am setting up the path for my IEDriver
-			//System.setProperty("webdriver.ie.driver", "");
+			System.setProperty("webdriver.gecko.driver", "D://Drivers//geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		// Doesn't the browser type, lauch the Website
