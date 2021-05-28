@@ -1,0 +1,34 @@
+STATIC VARIABLES:
+1)If the value of a variable is not varied from object to object such type of variables is not recommended to declare as instance variables. We have to declare such
+type of variables at class level by using static modifier.
+2)In the case of instance variables for every object a separate copy will be created
+but in the case of static variables for entire class only one copy will be created
+and shared by every object of that class.
+3)Static variables will be created at the time of class loading and destroyed at the
+time of class unloading hence the scope of the static variable is exactly same as
+the scope of the .class file.
+4)Static variables will be stored in method area. Static variables should be declared
+with in the class directly but outside of any method or block or constructor.
+
+INSTANCE VARIABLES:
+1)If the value of a variable is varied from object to object such type of variables are
+called instance variables.
+2)For every object a separate copy of instance variables will be created.
+3)Instance variables will be created at the time of object creation and destroyed at
+the time of object destruction hence the scope of instance variables is exactly
+same as scope of objects.
+4)Instance variables will be stored on the heap as the part of object.
+5)Instance variables should be declared with in the class directly but outside of any
+method or block or constructor.
+6)Instance variables can be accessed directly from Instance area. But cannot be
+accessed directly from static area.
+But by using object reference we can access instance variables from static area.
+
+LOCAL VARIABLES:
+1)Some times to meet temporary requirements of the programmer we can declare
+variables inside a method or block or constructors such type of variables are called local
+variables or automatic variables or temporary variables or stack variables.
+2)Local variables will be stored inside stack.
+3)The local variables will be created as part of the block execution in which it is declared
+and destroyed once that block execution completes. Hence the scope of the local
+variables is exactly same as scope of the block in which we declared.

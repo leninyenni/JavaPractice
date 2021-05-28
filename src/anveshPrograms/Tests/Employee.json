@@ -1,0 +1,27 @@
+{
+  "employeDetails": [
+    {
+      "empId": 123,
+      "Country": "USA",
+      "department": "IT",
+      "salary": 10000
+    },
+    {
+      "empId": 123,
+      "Country": "USA",
+      "department": "IT",
+      "salary": 12000
+    },
+    {
+      "empId": 123,
+      "Country": "USA",
+      "department": "IT",
+      "salary": 6000
+    },{
+      "empId": 123,
+      "Country": "USA",
+      "department": "IT",
+      "salary": 9000
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+there are 3-flow control statements
+-------------------------------------------
+1)conditional statements
+	if, if else,switch
+	
+	if (boolean condition) // condition must return either true or false
+	{
+	true body;
+	}
+	else
+	{
+	false body;
+	}
+	
+--> For if condition we can directly pass boolean values as arguments
+--> Curly braces are optional but with out braces its possible to take only one statement i.e syso	
+Switch case
+--> for case labels its perfectly allowed expressions like below
+
+E.g
+case 10+10: syso("xyz");
+break;
+case 10*2: syso("abc");
+break;
+case 10/5: syso("pqr");
+break;
+
+--> case labels must be unique
+--> Inside switch default statement is optional
+--> Inside switch Cases statements are also optional
+--> Finally Inside switch both cases and default statements are optional
+--> Inside Switch, you cannot declare independent statements, if declared it should be either of under cases or default: statements
+
+E.g 
+{
+byte b=10;
+Switch(b)
+{
+syso("some");
+}
+}
+
+
+
+	
+2)iteration statements
+	while,for,do while
+	
+3)transfer statements
+	goto,break,continue,try block,return		

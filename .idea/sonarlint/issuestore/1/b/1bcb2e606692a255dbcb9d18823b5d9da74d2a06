@@ -1,0 +1,33 @@
+
+c
+java:S1192,"FDefine a constant instead of duplicating this literal "vijay" 3 times.(Ùãğ’8­œÂã“/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(û’Ë–
+Z
+java:S2259"?A "NullPointerException" could be thrown; "s" is nullable here.(ºÉÏ¶ıÿÿÿÿ
+k
+java:S1206"PThis class overrides "equals()" and should therefore also override "hashCode()".(¥Ìí¥ıÿÿÿÿ
+:
+java:S2097"Add a type test to this method.(¥Ìí¥ıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ä„úÿÿÿÿ
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(Ö«¿¨
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ8Š‚Áã“/
+U	java:S106&"9Replace this use of System.out or System.err by a logger.(Í¸Êª8€âÁã“/
+X
+java:S18540"6Remove this useless assignment to local variable "s5".(­ºıÚùÿÿÿÿ8ºœÂã“/
+X
+java:S1854."6Remove this useless assignment to local variable "s3".(ŒÛÅÑÿÿÿÿÿ8ºœÂã“/
+S
+java:S1854-"6Remove this useless assignment to local variable "s2".(Ä×¬8¤À¹ã“/
+Z	java:S1064"9Replace this use of System.out or System.err by a logger.(á›Æıúÿÿÿÿ8¼œÂã“/
+]	java:S1251"<This block of commented-out lines of code should be removed.(‚–Óûÿÿÿÿ8¼œÂã“/
+q
+java:S21594"VRemove this call to "equals"; comparisons between unrelated types always return false.(á›Æıúÿÿÿÿ
+U	java:S1065"9Replace this use of System.out or System.err by a logger.(Ÿüï°8äÀÆã“/
+
+java:S21595"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(Ÿüï°
+D
+java:S1481-"'Remove this unused "s2" local variable.(Ä×¬8©À¹ã“/
+I
+java:S1481."'Remove this unused "s3" local variable.(ŒÛÅÑÿÿÿÿÿ8¼œÂã“/
+I
+java:S14810"'Remove this unused "s5" local variable.(­ºıÚùÿÿÿÿ8¼œÂã“/

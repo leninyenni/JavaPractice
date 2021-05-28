@@ -1,0 +1,22 @@
+\s-----> space character
+\S-----> except space character any character
+\d-----> any digit from 0 to 9 i.e [0-9]
+\D-----> except digits any character
+\w-----> any word character [a-z A-Z 0-9]
+\W-----> except word character i.e special characters
+. -----> any character
+
+Quantifiers-- we can use to specify number of occurences to a match
+atleast one a , u can consider as a single match
+
+a --exactly one a
+a+ -- atleast one a
+a* --- any number of a's including zero number also
+a? -- atmost one a
+
+String class split() method can take Pattern as an argument where as
+Pattern class split() method can take target string as an argument
+
+StringTokenizer class--specially designed for tokenizaiton activity
+it present in util package
+defualt pattern for Stringtokenizer is space i.e " "

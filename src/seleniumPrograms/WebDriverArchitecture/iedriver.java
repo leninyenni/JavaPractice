@@ -1,0 +1,10 @@
+package seleniumPrograms.WebDriverArchitecture;
+
+public class iedriver extends remotewebdriver{
+
+    public void get(String url)
+    {
+        System.out.println("this will launch in ie");
+    }
+
+}
