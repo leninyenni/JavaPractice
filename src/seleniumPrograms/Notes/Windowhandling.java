@@ -12,7 +12,7 @@ public class Windowhandling {
 
     public static void main(String[] argsStrings) {
         System.setProperty("webdriver.chrome.driver",
-                "D:\\Drivers\\chromedriver.exe");
+                "D:\\Drivers\\updatedchrome\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.online.citibank.co.in/");
         driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);

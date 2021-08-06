@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class Frame_Demo {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver",
-                "D:\\Drivers\\chromedriver.exe");
+                "D:\\Drivers\\updatedchrome\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://makemytrip.com/");

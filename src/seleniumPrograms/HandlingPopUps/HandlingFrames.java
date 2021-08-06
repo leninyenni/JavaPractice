@@ -18,7 +18,7 @@ public class HandlingFrames extends UsingJavaScriptExecutor {
 
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver",
-                "D:\\Drivers\\chromedriver.exe");
+                "D:\\Drivers\\updatedchrome\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://jqueryui.com/");
         driver.manage().window().maximize();

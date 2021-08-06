@@ -1,6 +1,5 @@
 package seleniumPrograms.Waits;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ExplicitWait {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\updatedchrome\\chromedriver.exe");
         // Start browser
         WebDriver driver = new ChromeDriver();
         // Start application

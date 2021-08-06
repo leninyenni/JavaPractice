@@ -12,7 +12,7 @@ public class CaptureScreenshot {
 	@Test
 	 public static void captureScreenMethod() throws Exception{
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Drivers\\chromedriver.exe");
+				"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 	 WebDriver driver = new ChromeDriver();
 	 driver.manage().window().maximize();
 	 driver.get("https://www.softwaretestingmaterial.com/capture-screenshot-using-selenium-webdriver");

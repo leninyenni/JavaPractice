@@ -14,7 +14,7 @@ public class Utilities {
         if (browser=="chrome")
         {
             System.setProperty("webdriver.chrome.driver",
-                    "D:\\Drivers\\chromedriver.exe");
+                    "D:\\Drivers\\updatedchrome\\chromedriver.exe");
             driver = new ChromeDriver();
         }
         if (browser=="firefox")

@@ -10,7 +10,7 @@ public class WebTableConcept {
 
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver",
-                "D:\\Drivers\\chromedriver.exe");
+                "D:\\Drivers\\updatedchrome\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.freecrm.com");
         driver.findElement(By.name("username")).sendKeys("naveenk");

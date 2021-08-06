@@ -15,7 +15,7 @@ public class PrintLinks {
 	public static void main(String[] args) throws InterruptedException {
 		
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Drivers\\chromedriver.exe");
+				"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 		ChromeDriver driver= new ChromeDriver();
 		driver.get("https://goconnect.org/");
 		Thread.sleep(3000);

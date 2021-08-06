@@ -18,7 +18,7 @@ public class GetCssValues {
 
     @BeforeClass
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\updatedchrome\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("http://www.google.com");
     }

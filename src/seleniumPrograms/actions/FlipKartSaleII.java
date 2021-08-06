@@ -16,7 +16,7 @@ public class FlipKartSaleII {
 
         public static void main(String[] args) throws Exception {
             System.setProperty("webdriver.chrome.driver",
-                    "D:\\Drivers\\chromedriver.exe");
+                    "D:\\Drivers\\updatedchrome\\chromedriver.exe");
             driver = new ChromeDriver();
             driver.get("https://www.flipkart.com");
             Thread.sleep(5000);

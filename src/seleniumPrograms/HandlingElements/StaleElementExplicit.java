@@ -12,7 +12,7 @@ public class StaleElementExplicit {
 
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver",
-                "D:\\Drivers\\chromedriver.exe");
+                "D:\\Drivers\\updatedchrome\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         WebDriverWait wait= new WebDriverWait(driver,10);
         driver.get("https://www.rediff.com/");

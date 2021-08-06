@@ -2,7 +2,7 @@ package companies.intrvwQustns.accentureQuestions;
 public class CharacterMethod {
 	public static void main(String[] args) {
 		int codepoint1 = 55;
-		int codepoint2 = 40;
+		int codepoint2 = 54;
 		boolean check1 = Character.isDigit(codepoint1);
 		boolean check2 = Character.isDigit(codepoint2);
 		if (check1) {

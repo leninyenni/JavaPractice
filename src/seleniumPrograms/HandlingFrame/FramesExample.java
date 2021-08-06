@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class FramesExample {
     public static void main(String[] args) throws NoSuchElementException, InterruptedException {
         System.setProperty("webdriver.chrome.driver",
-                "D:\\Drivers\\chromedriver.exe");
+                "D:\\Drivers\\updatedchrome\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://chercher.tech/practice/frames-example-selenium-webdriver");
         driver.manage().window().maximize();

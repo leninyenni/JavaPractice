@@ -25,7 +25,7 @@ public class CreateSignUpFacebook {
 	public static void createsignup() throws InterruptedException  {
 		
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Drivers\\chromedriver.exe");
+				"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 		driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com");
@@ -76,7 +76,7 @@ public class CreateSignUpFacebook {
 */	/*
 	 * private static WebDriver getFireDriver() {
 	 * System.setProperty("webdriver.gecko.driver",
-	 * "D:\\Drivers\\geckodriver.exe"); WebDriver webDriver = new
+	 * "D:\\Drivers\\updatedchrome\\geckodriver.exe"); WebDriver webDriver = new
 	 * FirefoxDriver();
 	 * 
 	 * return webDriver; }

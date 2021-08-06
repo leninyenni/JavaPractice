@@ -31,7 +31,7 @@ public class CaptureScreenShots {
     @Test
     public void f() throws Exception {
         System.setProperty("webdriver.chrome.driver",
-                "D:\\Drivers\\chromedriver.exe");
+                "D:\\Drivers\\updatedchrome\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("http://spicejet.com");
         driver.manage().window().maximize();

@@ -18,7 +18,7 @@ public class DownloadFileToChrome {
 		folder = new File(UUID.randomUUID().toString());
 		folder.mkdir(); // it checks if folder existing or not
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Drivers\\chromedriver.exe");
+				"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 		// Setting new download directory path
 		ChromeOptions options = new ChromeOptions();
 		// Setting new download directory path

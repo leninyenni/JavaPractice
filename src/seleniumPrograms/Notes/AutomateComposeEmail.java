@@ -9,7 +9,7 @@ public class AutomateComposeEmail {
 	
 	//launch Browser
 	System.setProperty("webdriver.chrome.driver",
-			"D:\\Drivers\\chromedriver.exe");
+			"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 	WebDriver driver = new ChromeDriver();
 	Thread.sleep(10000);
 	//System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver.exe");

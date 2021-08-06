@@ -7,12 +7,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
 
 public class TestSlider {
     WebDriver driver;
@@ -25,7 +23,7 @@ public class TestSlider {
     @BeforeTest
     public void setUp() {
         System.setProperty("webdriver.chrome.driver",
-                "D:\\Drivers\\chromedriver.exe");
+                "D:\\Drivers\\updatedchrome\\chromedriver.exe");
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 10);
     }
@@ -55,7 +53,7 @@ public class TestSlider {
         WebElement priceSlider =
                 findElement(slider);
 
-        assertTrue(priceSlider.isDisplayed());
+       Assert.assertTrue(priceSlider.isDisplayed());
         /*Dimension sliderSize = priceSlider.getSize();
         int sliderWidth = sliderSize.getWidth();
 */

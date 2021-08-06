@@ -8,7 +8,7 @@ public class Keyboard_Mouse_Operations {
 	public static void main(String[] args) throws InterruptedException,
 			AWTException {
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Drivers\\chromedriver.exe");
+				"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		// 2. enter the url -
 		driver.navigate().to("https://demo.actitime.com/login.do");

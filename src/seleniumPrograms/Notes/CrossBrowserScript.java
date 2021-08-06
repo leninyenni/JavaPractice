@@ -18,7 +18,7 @@ public class CrossBrowserScript {
 		// Check if parameter passed from TestNG is 'firefox'
 		if (browser.equalsIgnoreCase("facebook")) {
 			System.setProperty("webdriver.chrome.driver",
-					"D:\\Drivers\\chromedriver.exe");
+					"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 			// create chrome instance
 			driver = new ChromeDriver();
 			driver.get("https://www.facebook.com/");
@@ -27,7 +27,7 @@ public class CrossBrowserScript {
 		else if (browser.equalsIgnoreCase("twitter")) {
 			// set path to chromedriver.exe
 			System.setProperty("webdriver.chrome.driver",
-					"D:\\Drivers\\chromedriver.exe");
+					"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 			// create chrome instance
 			driver = new ChromeDriver();
 			driver.get("https://twitter.com/");
@@ -35,7 +35,7 @@ public class CrossBrowserScript {
 		else if (browser.equalsIgnoreCase("instagram")) {
 			// set path to chromedriver.exe
 			System.setProperty("webdriver.chrome.driver",
-					"D:\\Drivers\\chromedriver.exe");
+					"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 			// create chrome instance
 			driver = new ChromeDriver();
 			driver.get("https://www.instagram.com/");

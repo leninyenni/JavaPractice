@@ -1,5 +1,6 @@
 package seleniumPrograms.Elementlocators;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,7 +19,8 @@ public class XpathTechniques {
         System.out.println(title);
         WebDriverWait driverWait= new WebDriverWait(driver,10);
         driverWait.until(ExpectedConditions.titleIs(driver.getTitle()));
+        String script = "return window.getComputedStyle(document.querySelector('Male'),':before').getPropertyValue('content')";
+        JavascriptExecutor js = (JavascriptExecutor) driver;
         driver.close();
     }
-
 }

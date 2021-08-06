@@ -8,7 +8,7 @@ public class CloseMainBrowserOnly {
 	
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Drivers\\chromedriver.exe");
+				"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get(" https://www.naukri.com/ ");
 		String title=driver.getTitle();

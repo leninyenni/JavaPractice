@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class RegistrationForm {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver",
-                "D:\\Drivers\\chromedriver.exe");
+                "D:\\Drivers\\updatedchrome\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://demo.automationtesting.in/Register.html");
         driver.manage().window().maximize();

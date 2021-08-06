@@ -20,7 +20,6 @@ public class ArrayMath {
        System.out.println("method 1 :"+a1.maxArr(al));
        System.out.println("method 2 :"+a1.maxArr1(al));
     }
-
     public int maxArr1(ArrayList<Integer> Al) {
         int maxNum = 0;
         Instant start = Instant.now();

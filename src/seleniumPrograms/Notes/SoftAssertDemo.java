@@ -13,14 +13,14 @@ public class SoftAssertDemo {
 	{
 		SoftAssert assertion= new SoftAssert();
 		System.out.println("soft assertion check");
-		assertion.assertEquals(12, 13);
+		assertion.assertEquals(12, 13,"Please check the condition");
 		System.out.println("it works");
 		assertion.assertAll();
 	}
 	@Test
 	public void testHard()
 	{
-		System.out.println("soft assertion check");
+		System.out.println("hard assertion check");
 		Assert.assertEquals(12, 13,"Please check with dev");
 		System.out.println("it works");
 	}

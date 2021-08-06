@@ -1,78 +1,64 @@
 package seleniumPrograms.Notes;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
 public class Chromebrokenlinksimages {
 
 	public static void main(String[] args) throws InterruptedException, MalformedURLException, IOException {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver","C://Users//91939//driverss//chromedriver.exe");
-		WebDriver launchchrome = new ChromeDriver();
-		launchchrome.manage().window().maximize();
-		launchchrome.manage().deleteAllCookies();
-		launchchrome.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS); 
-	    launchchrome.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-//		launchchrome.get("https://ui.cogmento.com");
-//		launchchrome.findElement(By.xpath("//input[@name='email']")).sendKeys("sgnight30@gmail.com");
-//		launchchrome.findElement(By.xpath("//input[@name='password']")).sendKeys("Automatecrm@123");
-//		launchchrome.findElement(By.xpath("//div[text()='Login']")).click();
-//		// launchchrome.findElement(By.xpath("//span[text()='Calendar']")).click();
-//		Thread.sleep(5000);
-//		
-		launchchrome.get("https://www.theluxepass.com/"); 
-		launchchrome.findElement(By.xpath("//span[contains(text(), 'Login / Signup')]")).click();
-		launchchrome.findElement(By.xpath("//input[contains(@name,'email')]")).sendKeys("testingpulp21@gmail.com");
-		launchchrome.findElement(By.xpath("//input[contains(@name,'password')]")).sendKeys("testing@123"); 
-		launchchrome.findElement(By.xpath("//button[contains(text(), 'Login')]")).click();
-//		launchchrome.manage().timeouts().pageLoadTimeout(100000, TimeUnit.SECONDS); 
-//	    launchchrome.manage().timeouts().implicitlyWait(100000, TimeUnit.SECONDS);
+		System.setProperty("webdriver.chrome.driver","D:\\Drivers\\updatedchrome\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		// Maximize the browser
+		driver.manage().window().maximize();
+
+		// Implicit wait for 10 seconds
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		// To launch pavantestingtools.com
+		driver.get("http://newtours.demoaut.com/");
+
+		// Wait for 5 seconds
 		Thread.sleep(5000);
-		//1. Get the list of all the WebElements having tag <a> using findelements : 
-		List<WebElement> list1 = launchchrome.findElements(By.tagName("a"));
-		//2. Append the list of all the WebElements having tag <img> with the list having tag <a> using findelements :
-		list1.addAll(launchchrome.findElements(By.tagName("img"))); 
-		System.out.println("Size of the Initital list --->: "+list1.size());
-		//Thread.sleep(5000);
-		
-		//3. Iterate the list1 and exclude all the elements that don't have "href" attributes : 
-		List<WebElement> list2 = new ArrayList<WebElement>();
-		for (int i=0; i<list1.size();i++)
-		{
-			System.out.println(list1.get(i).getAttribute("href"));
-            if(list1.get(i).getAttribute("href")!=null && (!list1.get(i).getAttribute("href").contains("javascript"))) 
-            list2.add(list1.get(i));
-            
+
+		// Used tagName method to collect the list of items with tagName "a"
+		// findElements - to find all the elements with in the current page. It
+		// returns a list of all webelements or an empty list if nothing matches
+		List links = driver.findElements(By.tagName("a"));
+
+		// To print the total number of links
+		System.out.println("Total links are " + links.size());
+
+		// used for loop to
+		for (int i = 0; i < links.size(); i++) {
+			WebElement element = (WebElement) links.get(i);
+			// By using "href" attribute, we could get the url of the requried
+			// link
+			String url = element.getAttribute("href");
+
+			URL link = new URL(url);
+			// Create a connection using URL object (i.e., link)
+			HttpURLConnection httpConn = (HttpURLConnection) link.openConnection();
+			// Set the timeout for 2 seconds
+			httpConn.setConnectTimeout(2000);
+			// connect using connect method
+			httpConn.connect();
+			// use getResponseCode() to get the response code.
+			if (httpConn.getResponseCode() >= 400) {
+				System.out.println(url + " - " + "is Broken Link");
+			} else {
+				System.out.println(url + " - " + "is valid Link");
+			}
 		}
-        //4. Print the size of the "list2" : 
-		System.out.println("Size of the active links list -->: "+list2.size());
-		// 5. Check the URL connection could be made or not using httpconnectionapi : 
-		for(int j =0; j<list2.size(); j++)
-		{  
-		    	String url = list2.get(j).getAttribute("href");
-		    
-			System.out.println(j+"--->"+url);
-			Thread.sleep(2000);
-			if(url.equals("https://www.theluxepass.com/")) 
-//              || url.contains("https://www.facebook.com/theluxepassofficial") ||
-//					url.contains("https://www.instagram.com/theluxepassofficial")|| 
-//					url.contains("https://itunes.apple.com/in/app/the-luxepass/id1459849565?ls=1&mt=8") || 
-//					url.contains("https://play.google.com/store/apps/details?id=com.pulp.luxepass"))
-			launchchrome.get(url);	  
-			Thread.sleep(3000);
-//			HttpURLConnection connection = (HttpURLConnection)new URL(list2.get(j).getAttribute("href")).openConnection();
-//			connection.connect();
-//			String responsemsg = connection.getResponseMessage();
-//			int responsecode = connection.getResponseCode();
-//			connection.disconnect();
-			 //+ "--->" +responsecode+" "+responsemsg);
-	   }	
 	}
 
 }

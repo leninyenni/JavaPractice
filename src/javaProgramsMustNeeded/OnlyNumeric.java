@@ -5,16 +5,13 @@ public class OnlyNumeric {
 		String s2 = "";
 		String arr[] = s.split("[a-z A-Z]+");
 		for (String s1 : arr) {
-			System.out.println(s1);
 			s2 = s2 + s1.trim();
 		}
-		// System.out.println(s2);
 		char[] ch = s2.toCharArray();
 		for (Character c : ch) {
 			System.out.print(c + ",");
 			
 		}
-		
 		System.out.println();
 		System.out.println("**********************");
 		//get only alpha values

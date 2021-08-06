@@ -21,6 +21,6 @@ public class RepeatedSubstring {
 
     public static void main(String args[])
     {
-        System.out.println(RepeatedSubstring.repeatedSubstringPattern("abcabcabc"));
+        System.out.println(RepeatedSubstring.repeatedSubstringPattern("leninlenin"));
     }
 }

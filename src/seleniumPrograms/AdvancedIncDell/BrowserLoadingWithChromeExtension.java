@@ -16,7 +16,7 @@ public class BrowserLoadingWithChromeExtension {
 		options.addExtensions(new File("D://2.0.9_0.crx"));
 		// Set chromedriver.exe path.
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Drivers\\chromedriver.exe");
+				"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 		// Set browser capability to load options with driver.
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(ChromeOptions.CAPABILITY, options);

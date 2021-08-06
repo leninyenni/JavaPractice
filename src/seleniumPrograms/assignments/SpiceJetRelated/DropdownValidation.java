@@ -37,7 +37,7 @@ public class DropdownValidation {
     @BeforeTest
     public void beforeTest() {
         System.setProperty("webdriver.chrome.driver",
-                "D:\\Drivers\\chromedriver.exe");
+                "D:\\Drivers\\updatedchrome\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }

@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class CloseAnySpecifiedBrowser {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver",
-                "D:\\Drivers\\chromedriver.exe");
+                "D:\\Drivers\\updatedchrome\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get(" https://www.naukri.com/ ");
        //It will give all opened windows when launched to naukri.com

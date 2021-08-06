@@ -6,8 +6,6 @@ public class CountOfCharsInArray {
     public static void main(String[] args) {
         char[] chars ={'a','a','b','a','a','b','b','c'};
         HashMap<Character, Integer> countOfChars= new HashMap<>();
-
-
         for (Character c : chars)
         {
             int count=1;

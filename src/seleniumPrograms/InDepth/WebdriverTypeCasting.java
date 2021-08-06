@@ -15,7 +15,7 @@ public class WebdriverTypeCasting {
 
     public static void main(String[] args) throws IOException {
         System.setProperty("webdriver.chrome.driver",
-                "D:\\Drivers\\chromedriver.exe");
+                "D:\\Drivers\\updatedchrome\\chromedriver.exe");
         //if you declare like this then it will run perfectly in chromedriver, but what if you want to run the same script in Firefox,IE??
         //with below declaration if you see all suggested methods on driver, you can getScreenShotAs, executeScript and methods
         //from all the interfaces those which RemoteWebDriver is implementing are available on driver

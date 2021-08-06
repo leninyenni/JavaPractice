@@ -8,8 +8,8 @@ public class Test {
 
 	public static void main(String[] args) throws IOException {
 		
-		FileInputStream fis= new FileInputStream("E:\\File\\input.txt");
-		FileOutputStream fos= new FileOutputStream("E:\\File\\op2.txt");
+		FileInputStream fis= new FileInputStream("D:\\Testdata\\textfiles\\abc.txt");
+		FileOutputStream fos= new FileOutputStream("D:\\Testdata\\textfiles\\abc2.txt");
 		int c;
 		while((c=fis.read())!=-1) // -1 represents end of the stream
 		{

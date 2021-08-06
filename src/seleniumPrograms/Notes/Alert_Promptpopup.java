@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 public class Alert_Promptpopup {
 	public static void main(String[] args) throws InterruptedException {
 		/*System.setProperty("webdriver.chrome.driver",
-				"D:\\Drivers\\chromedriver.exe");
+				"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();*/
 		
 		  System.setProperty("webdriver.gecko.driver",

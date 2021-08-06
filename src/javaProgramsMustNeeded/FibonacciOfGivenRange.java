@@ -2,7 +2,7 @@ package javaProgramsMustNeeded;
 import java.util.Scanner;
 public class FibonacciOfGivenRange {
 	public static void main(String[] args) {
-		System.out.println("enter your integer here other more than 1:");
+		System.out.println("To Print first N fibonacci numbers, provide N here : ");
 		Scanner sc = new Scanner(System.in);
 		int first = 0;
 		int second = 1;

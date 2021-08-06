@@ -73,7 +73,7 @@ class Main1 {
     // main function
     public static void main(String[] args)
     {
-        int arr[] = {-8,-7,-6 };
+        int arr[] = {-8,-7,-6,2};
         int arr_size = arr.length;
         int missing = findMissing(arr, arr_size);
         System.out.println("The smallest positive missing number is " + missing);

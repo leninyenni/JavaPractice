@@ -8,7 +8,7 @@ import java.util.Set;
 public class ChildBrowserPopUp {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Drivers\\chromedriver.exe");
+				"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get(" https://www.naukri.com/ ");
 		// using getWindowHandles(), get a set of window handle IDs

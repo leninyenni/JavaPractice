@@ -1,5 +1,5 @@
 package javaProgramsMustNeeded;
-import java.util.Scanner;
+
 public class PrintStarPyramid {
 	public static void main(String[] args) {
 		int i, j, k;

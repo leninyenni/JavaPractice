@@ -10,7 +10,7 @@ public class Base {
 	public static WebDriver driver;
 	public static void initialization() {
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Drivers\\chromedriver.exe");
+				"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 		driver = new ChromeDriver();
 		
 		driver.get("https://www.google.com");

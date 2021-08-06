@@ -14,7 +14,7 @@ public class CookiesHandling {
     public static void main(String[] args) {
         WebDriver driver;
         System.setProperty("webdriver.chrome.driver",
-                "D:\\Drivers\\chromedriver.exe");
+                "D:\\Drivers\\updatedchrome\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("http://www.facebook.com");
         // Input Email id and Password If you are already Register

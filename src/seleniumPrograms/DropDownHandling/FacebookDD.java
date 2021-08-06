@@ -14,7 +14,7 @@ public class FacebookDD {
 	@Test
 	public void selectDropdown() throws Exception {
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Drivers\\chromedriver.exe");
+				"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com");
 		driver.manage().window().maximize();

@@ -12,7 +12,7 @@ import seleniumPrograms.HandlingPopUps.UsingJavaScriptExecutor;
 public class WaitCommands extends UsingJavaScriptExecutor {
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\updatedchrome\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
 		
 		driver.get("https://www.google.com");

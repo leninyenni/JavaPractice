@@ -13,7 +13,7 @@ public class HandlingCalendarUsingJavascript {
 	}
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Drivers\\chromedriver.exe");
+				"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		/*
 		 * System.setProperty("webdriver.gecko.driver",

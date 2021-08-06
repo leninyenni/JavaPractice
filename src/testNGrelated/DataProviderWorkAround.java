@@ -62,14 +62,14 @@ public class DataProviderWorkAround {
 	@Test(dataProvider = "data-from-excel-hashmap")
 	public void integrationTest(Map<Object, Object> map) {
 		System.out.println("-------------Test case started ----------------");
-		System.out.println(map.get("UserName"));
-		System.out.println(map.get("Password"));
-		System.out.println(map.get("Dob"));
+		System.out.println(map.get("username"));
+		System.out.println(map.get("password"));
+		System.out.println(map.get("dob"));
 		System.out.println("-------------Test case Ended ----------------");
 	}
 	@DataProvider(name = "data-from-excel-hashmap")
 	public Object[][] dataSupplier() throws IOException {
-		File file = new File("E://JAVA//DataProviderExcelHashMap.xls");
+		File file = new File("D:\\Testdata\\textfiles\\exceldata.xls");
 		FileInputStream fis = new FileInputStream(file);
 		HSSFWorkbook wb = new HSSFWorkbook(fis);
 		HSSFSheet sheet = wb.getSheetAt(0);
@@ -80,16 +80,17 @@ public class DataProviderWorkAround {
 		for (int i = 0; i < lastRowNum; i++) {
 			Map<Object, Object> datamap = new HashMap<>();
 			for (int j = 0; j < lastCellNum; j++) {
-				datamap.put(sheet.getRow(0).getCell(j).toString(), sheet
-						.getRow(i + 1).getCell(j).toString());
+				datamap.put(sheet.getRow(0).getCell(j).toString(),
+						sheet.getRow(i + 1).getCell(j).toString());
 			}
 			obj[i][0] = datamap;
+			System.out.println(datamap);
 		}
 		return obj;
 	}
 	@DataProvider(name = "excelData")
 	public Object[][] readExcel() throws IOException {
-		File file = new File("E://JAVA//DataProviderExcelHashMap.xls");
+		File file = new File("D:\\Testdata\\textfiles\\exceldata.xls");
 		FileInputStream fis = new FileInputStream(file);
 		HSSFWorkbook workbook = new HSSFWorkbook(fis);
 		HSSFSheet sheet = workbook.getSheet("ExcelData");

@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 public class HandlingShadowDOMElements {
 
     WebDriver driver;
-    String chromedriverPath = "D:\\Drivers\\chromedriver.exe";
+    String chromedriverPath = "D:\\Drivers\\updatedchrome\\chromedriver.exe";
     String firfoxpath = "D://Drivers//geckodriver.exe";
     WebDriverWait wait;
 

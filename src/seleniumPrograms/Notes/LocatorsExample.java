@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class LocatorsExample {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Drivers\\chromedriver.exe");
+				"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		// 2. enter the url -
 		driver.navigate().to("https://demo.actitime.com/login.do");

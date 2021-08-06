@@ -12,7 +12,7 @@ public class SelPerspective {
     public SelPerspective(String brower)
     {
         if (brower.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\updatedchrome\\chromedriver.exe");
             this.driver = new ChromeDriver();
         }
         else if (brower.equals("firefox"))

@@ -5,7 +5,7 @@ import java.io.IOException;
 public class ReadFileLineByLine {
 	public static void main(String[] args) throws IOException {
 		String s = null;
-		BufferedReader br = new BufferedReader(new FileReader("D:\\Desktop\\FileRead.txt"));
+		BufferedReader br = new BufferedReader(new FileReader("D:\\Testdata\\textfiles\\abc.txt"));
 		while ((s = br.readLine()) != null) {
 			System.out.println(s);
 		}

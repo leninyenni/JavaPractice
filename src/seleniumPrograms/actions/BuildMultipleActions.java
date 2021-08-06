@@ -13,7 +13,7 @@ public class BuildMultipleActions {
 	public static void main(String[] args) throws InterruptedException {
 		String baseUrl = "http://www.facebook.com/"; 
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Drivers\\chromedriver.exe");
+				"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get(baseUrl);
 		WebElement txtUsername = driver.findElement(By.id("email"));

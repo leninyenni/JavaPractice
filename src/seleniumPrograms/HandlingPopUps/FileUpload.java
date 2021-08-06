@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class FileUpload {
 	public static void main(String[] args) throws Exception {
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Drivers\\chromedriver.exe");
+				"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.gmail.com");
 		driver.findElement(By.name("identifier")).sendKeys("leninkumaryenni2@gmail.com");

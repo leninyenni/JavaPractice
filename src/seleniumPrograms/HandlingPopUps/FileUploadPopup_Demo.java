@@ -8,7 +8,7 @@ public class FileUploadPopup_Demo {
 	public static void main(String[] args) throws InterruptedException,
 			AWTException {
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Drivers\\chromedriver.exe");
+				"D:\\Drivers\\updatedchrome\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://nervgh.github.io/pages/angular-file-upload/examples/simple");
 		Thread.sleep(5000);

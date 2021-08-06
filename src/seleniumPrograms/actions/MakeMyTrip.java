@@ -9,18 +9,31 @@ import java.util.concurrent.TimeUnit;
 public class MakeMyTrip {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver",
-                "D:\\Drivers\\chromedriver.exe");
+                "D:\\Drivers\\updatedchrome\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get("http://www.makemytrip.com/flights");
-        try {
+
+        driver.findElement(By.xpath("//li[@data-cy='account']")).click();
+
+        WebElement fromCity= driver.findElement(By.id("fromCity"));
+        boolean beforeLogin=fromCity.isDisplayed();
+        System.out.println(beforeLogin);
+        driver.navigate().refresh();
+
+        WebElement fromCityAgain= driver.findElement(By.id("fromCity"));
+        boolean afterrefresh=fromCityAgain.isEnabled();
+        System.out.println(afterrefresh);
+
+
+       /* try {
             driver.findElement(By.id("fromCity")).click();
         } catch (ElementClickInterceptedException e) {
             System.out.println("you came to catch block");
             driver.findElement(By.xpath("//li[@data-cy='account']")).click();
             driver.findElement(By.id("fromCity")).click();
-        }
+        }*/
         WebElement fromTextBox = driver.findElement(By.xpath("//input[@placeholder='From']"));
         fromTextBox.clear();
         fromTextBox.sendKeys("Bangk");

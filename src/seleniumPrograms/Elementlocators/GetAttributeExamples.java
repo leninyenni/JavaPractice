@@ -12,7 +12,7 @@ public class GetAttributeExamples {
 
     @Test
     public void fromGoogle() {
-        System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\updatedchrome\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.google.com");
@@ -36,7 +36,7 @@ public class GetAttributeExamples {
 
     @Test
     public void findElements() {
-        System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\updatedchrome\\chromedriver.exe");
         WebDriver driver= new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.chercher.tech/java/index-selenium-webdriver");

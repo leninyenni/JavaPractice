@@ -27,7 +27,7 @@ public class WebdriverTypeCastingRealTime {
         {
             case "chrome":
                 System.setProperty("webdriver.chrome.driver",
-                        "D:\\Drivers\\chromedriver.exe");
+                        "D:\\Drivers\\updatedchrome\\chromedriver.exe");
                 driver= new ChromeDriver();
                 break;
             case "firefox":
