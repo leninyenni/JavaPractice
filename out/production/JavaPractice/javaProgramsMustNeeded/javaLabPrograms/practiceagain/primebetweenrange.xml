@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="2">
+    <parameter name="firstNum" value="1"/>
+    <parameter name="secondNum" value="20"/>
+    <test name="printprimes">
+        <classes>
+            <class name="javaProgramsMustNeeded.javaLabPrograms.practiceagain.PrintPrimesBetweenGivenRange"/>
+            <class name="javaProgramsMustNeeded.javaLabPrograms.practiceagain.OddNumbersInGivenRange"/>
+        </classes>
+    </test>
+
+</suite>
