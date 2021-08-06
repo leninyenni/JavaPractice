@@ -1,0 +1,23 @@
+if input string is "lenin"
+
+for each time, check if its a pallendrome or not
+
+l
+le
+len
+leni
+lenin
+
+e
+en
+eni
+enin
+
+n
+ni
+nin
+
+i
+in
+
+n
